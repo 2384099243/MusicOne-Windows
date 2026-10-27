@@ -6,6 +6,10 @@ MusicOne Windows 是一款面向 Windows 10 / 11 的开源音乐播放器。它�
 
 基于 [HGODLK/MusicOne](https://github.com/HGODLK/MusicOne) 独立适配，采用 **MIT 许可**。本项目为社区 Windows 版本，非原作者官方发行版。
 
+## ⚠️ 免责声明
+
+请遵守各平台服务条款，使用风险自负。所有在线音源、媒体数据及相关知识产权均归属原始平台与版权方所有，本项目不提供任何音频抓取、越权破解或商业化营利服务。
+
 ## 下载与安装
 
 前往 [Releases 下载 1.0.0](https://github.com/2384099243/MusicOne-Windows/releases/tag/v1.0.0)。
