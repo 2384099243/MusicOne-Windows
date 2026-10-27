@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.build-cache/
+__pycache__/
+*.log
+*.exe
+*.zip
+*.msi
+.env
+.env.*
+musicone-state.json
+playback-diagnostics.json
+Cookies
+Local State

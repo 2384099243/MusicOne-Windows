@@ -1,0 +1,72 @@
+:root{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark;--ink:#ececec;--muted:#b4b4b4;--green:#dedede;--pale:#333333;--line:#3d3d3d;--panel:#2a2a2a;--bg:#212121;--panel-glass:rgba(47,47,47,.78)}
+:root[data-theme=dark] body{background:radial-gradient(ellipse at 95% 0%,#4a4a4a26,transparent 60%),#212121}
+:root[data-theme=dark] .titlebar{background:rgba(27,27,27,.88);border-color:#ffffff12}
+:root[data-theme=dark] .brand span{color:#a4a4a4}
+:root[data-theme=dark] .window-buttons button{color:#cecece}
+:root[data-theme=dark] .window-buttons button:hover{background:#383838}
+:root[data-theme=dark] .window-buttons button:last-child:hover{background:#c6404d;color:white}
+:root[data-theme=dark] .sidebar{background:rgba(23,23,23,.90);border-color:#ffffff0d}
+:root[data-theme=dark] .nav-caption{color:#929292}
+:root[data-theme=dark] nav button,:root[data-theme=dark] .playlist-nav-item,:root[data-theme=dark] .sidebar-bottom button{color:#c9c9c9}
+:root[data-theme=dark] nav button:hover,:root[data-theme=dark] .playlist-nav-item:hover{background:#2c2c2c}
+:root[data-theme=dark] nav button.active,:root[data-theme=dark] .playlist-nav-item.active{background:#333333;color:#f0f0f0}
+:root[data-theme=dark] .playlist-caption button{color:#adadad}
+:root[data-theme=dark] .sidebar-bottom>span{color:#8f8f8f}
+:root[data-theme=dark] .topline{background:#212121d9}
+:root[data-theme=dark] #breadcrumb{color:#9d9d9d}
+:root[data-theme=dark] #search-form{background:#303030c9;border-color:#484848;box-shadow:none}
+:root[data-theme=dark] #search-input{color:var(--ink)}
+:root[data-theme=dark] #search-form svg{color:#b0b0b0}
+:root[data-theme=dark] input::placeholder,:root[data-theme=dark] textarea::placeholder{color:#a4a4a4;opacity:1}
+:root[data-theme=dark] kbd{color:#b9b9b9;border-color:#505050}
+:root[data-theme=dark] input[type=text],:root[data-theme=dark] textarea,:root[data-theme=dark] select,:root[data-theme=dark] .library-tools input{background:#262626;color:var(--ink);border-color:#4a4a4a}
+:root[data-theme=dark] .primary,:root[data-theme=dark] .play-button{background:#dedede;color:#191919}
+:root[data-theme=dark] .primary:hover,:root[data-theme=dark] .play-button:hover{background:#f5f5f5}
+:root[data-theme=dark] .secondary{background:#383838;color:#e0e0e0}
+:root[data-theme=dark] .ghost{border-color:#4a4a4a;color:#d0d0d0}
+:root[data-theme=dark] .source-card,:root[data-theme=dark] .settings-card,:root[data-theme=dark] .online-intro,:root[data-theme=dark] .folder-card{background:rgba(45,45,45,.68);border-color:#ffffff14}
+:root[data-theme=dark] .source-badge{background:#2d4332;color:#9bd99c}
+:root[data-theme=dark] .source-badge.bili{background:#45303c;color:#eca3c4}
+:root[data-theme=dark] .source-card .arrow{color:#b0b0b0}
+:root[data-theme=dark] .welcome{background:#282828;border-color:#494949}
+:root[data-theme=dark] .welcome .empty-symbol{color:#adadad}
+:root[data-theme=dark] .track-header{color:#a0a0a0}
+:root[data-theme=dark] .track-row:hover{background:#2f2f2f;border-color:#444444}
+:root[data-theme=dark] .track-row.current{background:#363636;border-color:#505050}
+:root[data-theme=dark] .row-index{color:#a3a3a3}
+:root[data-theme=dark] .track-artist,:root[data-theme=dark] .track-album,:root[data-theme=dark] .track-duration{color:#b9b9b9}
+:root[data-theme=dark] .cover-placeholder{background:linear-gradient(135deg,#393939,#454545);color:#c6c6c6}
+:root[data-theme=dark] .badge{background:#3a3a3a;color:#d0d0d0}
+:root[data-theme=dark] .badge.vip{background:#493e25;color:#e5c887}
+:root[data-theme=dark] .icon-btn{color:#c7c7c7}
+:root[data-theme=dark] .icon-btn:hover{background:#454545}
+:root[data-theme=dark] .icon-btn.liked{color:#f39aaa}
+:root[data-theme=dark] .empty-inline{color:#aaaaaa}
+:root[data-theme=dark] .tab.active{background:#383838;color:#ededed;border-color:#565656}
+:root[data-theme=dark] .account-state{background:#353535;color:#bfbfbf}
+:root[data-theme=dark] .account-state.connected{background:#363d38;color:#b4d4bf}
+:root[data-theme=dark] .notice{border-color:#606060;color:#b3b3b3}
+:root[data-theme=dark] .loading{color:#bbbbbb}
+:root[data-theme=dark] .loading::before{border-color:#444444;border-top-color:#dddddd}
+:root[data-theme=dark] .error-box{background:#3c2b24;color:#edbda6}
+:root[data-theme=dark] .error-text{color:#f3aa97}
+:root[data-theme=dark] .player{border-color:#ffffff18;box-shadow:0 8px 35px #0003,inset 0 1px 0 #ffffff08}
+:root[data-theme=dark] .now-cover{background:#393939;color:#c7c7c7}
+:root[data-theme=dark] .now-meta span,:root[data-theme=dark] .timeline span,:root[data-theme=dark] #format{color:#adadad}
+:root[data-theme=dark] #volume-icon{color:#bbbbbb}
+:root[data-theme=dark] .queue-panel{background:#2b2b2be8;border-color:#505050;box-shadow:0 12px 60px #0005}
+:root[data-theme=dark] .queue-item.active{color:#f1f1f1}
+:root[data-theme=dark] dialog{background:#2c2c2c;border-color:#515151;box-shadow:0 20px 90px #0008}
+:root[data-theme=dark] dialog::backdrop{background:#00000080}
+:root[data-theme=dark] #modal-body p{color:#b5b5b5}
+:root[data-theme=dark] .footnote{color:#999999}
+:root[data-theme=dark] .cloud-card:hover{background:#323232d9;border-color:#4a4a4a;box-shadow:0 8px 25px #0003}
+:root[data-theme=dark] .list-view .cloud-card{background:#292929;border-color:#414141}
+/* The cover-derived lyric palette remains independent from the library theme. */
+:root[data-theme=dark] .immersive .large-cover>.cover-placeholder{background:transparent;color:var(--ambient-accent)}
+:root[data-theme=dark] .immersive-play,:root[data-theme=dark] .immersive-close,:root[data-theme=dark] .ghost-light{color:#e8e8e8}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){color-scheme:dark;background:#212121}}
+
+:root[data-theme=dark] :is(.titlebar,.sidebar,.player,.queue-panel,dialog,.volume-popover){backdrop-filter:blur(28px) saturate(.9)}
+:root[data-theme=dark] .settings-card{backdrop-filter:blur(20px) saturate(.9)}

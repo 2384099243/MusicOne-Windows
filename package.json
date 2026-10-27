@@ -1,0 +1,23 @@
+{
+  "name": "musicone-windows",
+  "version": "1.0.0",
+  "description": "开源 Windows 音乐播放器，支持本地音乐、QQ 音乐歌单与沉浸歌词",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "electron": "45.0.0"
+  },
+  "author": "MusicOne Windows contributors",
+  "homepage": "https://github.com/2384099243/MusicOne-Windows",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2384099243/MusicOne-Windows.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2384099243/MusicOne-Windows/issues"
+  }
+}

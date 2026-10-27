@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; media-src musicone:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>MusicOne · Windows</title>
+  <script src="appearance-client.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="appearance.css">
+  <link rel="stylesheet" href="player-layout.css">
+</head>
+<body>
+  <header class="titlebar"><div class="brand"><img src="assets/icon.png" alt=""><strong>MusicOne</strong><span>WINDOWS · 1.0</span></div><div class="window-buttons"><button data-window="minimize" aria-label="最小化">−</button><button data-window="maximize" aria-label="最大化">□</button><button data-window="close" aria-label="关闭">×</button></div></header>
+  <div class="workspace">
+    <aside class="sidebar">
+      <div class="nav-caption">聆听</div>
+      <nav><button data-nav="home"></button><button data-nav="qq-library"></button><button data-nav="online"></button><button data-nav="library"></button><button data-nav="favorites"></button></nav>
+      <div class="nav-caption playlist-caption">我的歌单<button id="new-playlist" title="新建歌单" aria-label="新建歌单">＋</button></div>
+      <div id="playlist-nav"></div>
+      <div class="sidebar-bottom"><button data-nav="settings"></button><span>让音乐回到音乐本身</span></div>
+    </aside>
+    <main>
+      <div class="topline"><div id="breadcrumb">为你而奏</div><form id="search-form"><span id="search-icon"></span><input id="search-input" placeholder="在 QQ 音乐搜索歌曲、歌手" aria-label="搜索歌曲"><kbd>Enter</kbd></form></div>
+      <div id="content" tabindex="-1"></div>
+    </main>
+  </div>
+  <footer class="player">
+    <button id="now-cover" class="now-cover" title="打开歌词"></button>
+    <div class="now-meta"><strong id="now-title">此刻，听点喜欢的</strong><span id="now-artist">导入音乐，或从在线音源开始</span></div>
+    <button id="now-favorite" class="icon-btn" aria-label="收藏当前歌曲"></button>
+    <div class="transport"><div class="transport-buttons"><button id="mode" class="icon-btn" title="顺序播放"></button><button id="prev" class="icon-btn" title="上一首"></button><button id="play" class="play-button" title="播放 / 暂停"></button><button id="next" class="icon-btn" title="下一首"></button><span id="format">—</span></div><div class="timeline"><span id="elapsed">0:00</span><input id="seek" type="range" min="0" max="1000" value="0" aria-label="播放进度"><span id="duration">0:00</span></div></div>
+    <div class="player-end"><button id="lyrics-toggle" class="icon-btn" title="沉浸歌词">词</button><div id="volume-control" class="volume-control"><button id="volume-button" class="icon-btn" title="音量" aria-label="音量" aria-haspopup="dialog" aria-expanded="false" aria-controls="volume-popover" aria-describedby="volume-value"><span id="volume-icon"></span></button></div><button id="queue-toggle" class="icon-btn" title="播放队列"></button></div>
+  </footer>
+  <section id="immersive" class="immersive" role="dialog" aria-modal="true" aria-label="正在播放与歌词" hidden><span class="ambient-orb one" aria-hidden="true"></span><span class="ambient-orb two" aria-hidden="true"></span><button id="close-immersive" class="immersive-close" title="退出歌词全屏" aria-label="退出歌词全屏"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button><span class="immersive-caption">正在播放</span><span class="immersive-exit-hint">Esc 返回</span><div class="immersive-left"><div id="large-cover" class="large-cover"></div><div class="immersive-track-heading"><div class="immersive-track-copy"><h2 id="large-title"></h2><p id="large-artist"></p></div><div id="immersive-favorite"></div></div><div id="immersive-controls"></div><div id="immersive-extras"></div><button id="load-lyrics" class="ghost-light" hidden>导入 LRC 歌词</button><span id="lyric-status" hidden></span></div><div id="lyric-lines" class="lyric-lines"></div><button id="lyrics-resume" hidden>回到当前歌词</button></section>
+  <aside id="queue-panel" class="queue-panel" hidden></aside>
+  <div id="toast" role="status" hidden></div>
+  <div id="volume-popover" class="volume-popover" role="dialog" aria-label="调节音量" hidden><div class="volume-popover-heading"><span>音量</span><output id="volume-value" for="volume">80%</output></div><input id="volume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="音量大小"></div>
+  <dialog id="modal"><form id="modal-form" method="dialog"><div class="dialog-heading"><h2 id="modal-title"></h2><button type="button" id="modal-close" class="icon-btn" aria-label="关闭">×</button></div><div id="modal-body"></div><p id="modal-error" class="error-text"></p><div class="dialog-actions"><button type="button" id="modal-cancel" class="secondary">取消</button><button type="submit" id="modal-submit" class="primary">确定</button></div></form></dialog>
+  <audio id="audio" preload="metadata"></audio>
+  <script src="visuals.js"></script>
+  <script src="volume-menu.js"></script>
+  <script src="lyrics-layout.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>
